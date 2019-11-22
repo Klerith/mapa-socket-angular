@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WebsocketService } from './services/websocket.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mapbox';
+
+  constructor( private wsService: WebsocketService ) {}
+
 }
